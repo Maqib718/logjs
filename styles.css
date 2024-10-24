@@ -1,0 +1,253 @@
+/* Root Variables */
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f0f0f0;
+    --text-color: #333;
+    --heading-color: #4a4a4a;
+    --link-color: #3498db;
+    --link-hover-color: #2980b9;
+    --border-color: #ccc;
+    --border-radius: 8px;
+    --font-family: 'Arial', sans-serif;
+    --button-padding: 0.75rem 1.5rem;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: var(--heading-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #34495e;
+}
+
+h3 {
+    font-size: 1.75rem;
+    color: #16a085;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #27ae60;
+}
+
+h5 {
+    font-size: 1.25rem;
+    color: #2980b9;
+}
+
+h6 {
+    font-size: 1rem;
+    color: #8e44ad;
+}
+
+/* Paragraphs */
+p {
+    margin: 0.1rem;
+    color: var(--text-color);
+}
+
+/* Links */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+li {
+    margin: 0.5rem;
+}
+
+dl {
+    margin-bottom: 1.5rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+/* Forms */
+form {
+    margin-bottom: 1.5rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+textarea {
+    height: 150px;
+}
+
+/* Buttons */
+button, .btn {
+    display: inline-block;
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+button {
+    background-color: var(--primary-color);
+}
+
+button:hover, .btn:hover {
+    background-color: var(--link-hover-color);
+}
+
+/* Images & Iframes */
+img, iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+}
+
+/* Code and Preformatted Text */
+code, pre {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+code {
+    padding: 2px 4px;
+    border-radius: var(--border-radius);
+}
+
+pre {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    overflow: auto;
+}
+
+/* Blockquotes */
+blockquote {
+    padding: 10px 20px;
+    margin: 20px 0;
+    border-left: 5px solid var(--primary-color);
+    background: #f9f9f9;
+    font-style: italic;
+}
+
+/* Headers */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-radius: var(--border-radius);
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Section, Article, Aside */
+section, article, aside {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation */
+nav {
+    margin: 10px 0;
+    padding: 0 10px;
+    background-color: var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
