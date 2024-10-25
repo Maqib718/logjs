@@ -206,8 +206,8 @@ header {
 
 /* Footer */
 footer {
-    background-color: #fff;
-    color: white;
+    background-color: #333;
+    color: #fff;
     padding: 1rem;
     text-align: center;
     border-radius: var(--border-radius);
