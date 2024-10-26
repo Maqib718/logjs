@@ -1,5 +1,7 @@
 /* Root Variables */
 :root {
+    color-scheme: dark;
+    
     --primary-color: #3498db;
     --secondary-color: #2ecc71;
     --background-color: #f0f0f0;
@@ -30,7 +32,7 @@ body {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 1rem;
+    margin: 0.5rem;
     color: var(--heading-color);
 }
 
@@ -110,20 +112,6 @@ table {
     margin-bottom: 1.5rem;
 }
 
-th, td {
-    padding: 10px;
-    border: 1px solid var(--border-color);
-}
-
-th {
-    background-color: var(--primary-color);
-    color: #fff;
-}
-
-td {
-    background-color: #f9f9f9;
-}
-
 /* Forms */
 form {
     margin-bottom: 1.5rem;
@@ -165,7 +153,6 @@ button:hover, .btn:hover {
 img, iframe {
     max-width: 100%;
     height: auto;
-    border-radius: var(--border-radius);
 }
 
 /* Code and Preformatted Text */
@@ -176,14 +163,20 @@ code, pre {
 code {
     padding: 2px 4px;
     border-radius: var(--border-radius);
+    font-family: JetBrains Mono;
 }
 
 pre {
-    background: #333;
-    color: #fff;
+    color: #000;
     padding: 10px;
     border-radius: var(--border-radius);
     overflow: auto;
+}
+
+pre code {
+    background: #333;
+    color: #fff;
+    border-radius: var(--border-radius);
 }
 
 /* Blockquotes */
@@ -212,7 +205,7 @@ footer {
     text-align: center;
     border-radius: var(--border-radius);
     width: 100%;
-    z-index: 1000;
+
 }
 
 /* Section, Article, Aside */
@@ -251,3 +244,146 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
+/* :::::::::::::::::::::::::::::::::::::: */
+
+/* Media Content */
+audio, video {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: var(--border-radius);
+}
+
+img, iframe {
+    max-width: 100%;
+}
+
+track, source {
+    display: none;
+}
+
+/* Text Content */
+abbr[title] {
+    border-bottom: 1px dotted var(--text-color);
+    cursor: help;
+}
+
+cite {
+    font-style: italic;
+    color: var(--secondary-color);
+}
+
+dfn {
+    font-weight: bold;
+    font-style: italic;
+}
+
+mark {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.2em;
+    border-radius: var(--border-radius);
+}
+
+samp, kbd, var {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #eee;
+    padding: 2px 4px;
+    border-radius: var(--border-radius);
+}
+
+time {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+/* Interactive Elements */
+details {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: #f9f9f9;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+dialog {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Elements */
+fieldset {
+    margin: 0.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+}
+
+legend {
+    font-weight: bold;
+    padding: 0 10px;
+    color: var(--primary-color);
+    font-size: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color);
+}
+
+output {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: black;
+}
+
+/* Table Elements */
+caption {
+    caption-side: bottom;
+    font-weight: bold;
+    padding: 10px;
+    color: var(--primary-color);
+}
+
+col, colgroup {
+    background-color: #f0f0f0;
+}
+
+thead {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+tbody, tfoot {
+    background-color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+    
