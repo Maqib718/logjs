@@ -21,11 +21,45 @@
         <img src="/LogJS-logo.jpg">
       </h1>
     </header>
-    <section>
+    <section id="log-introduction">
       <a href="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js">
         <img src="https://img.shields.io/badge/jsdelivr-Log.js-e74d3a?logo=jsdelivr" />
       </a>
       <p>Log.js is a lightweight, flexible JavaScript logging library that provides an efficient way to format, display, and manage log messages. Designed with simplicity and readability in mind, Log.js enhances debugging and development processes by offering a customizable logging experience.</p>
+    </section>
+    <section>
+      <h2 id="table-of-content">Table Of Content</h2>
+      <ul>
+        <li>
+          <a href="#log-introduction">Introduction</a>
+        </li>
+        <li>
+          <a href="#log-formatObject">Functions:</a>
+          <ul>
+            <li>
+              <a href="#log-formatObject">Log.formatObject</a>
+            </li>
+            <li>
+              <a href="#log-formatVar">Log.formatVar</a>
+            </li>
+            <li>
+              <a href="#log-print">Log.print</a>
+            </li>
+            <li>
+              <a href="#log-getCurrentTime">Log.getCurrentTime</a>
+            </li>
+            <li>
+              <a href="#log-getCurrentTime">Log logInDiv</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#log-how-to-use-logjs">How To Use Log.js</a>
+        </li>
+        <li>
+          <a href="#log-version-info">Version Info</a>
+        </li>
+      </ul>
     </section>
     <section>
       <h2 id="key-features">Key Features</h2>
@@ -62,8 +96,135 @@
         </li>
       </ul>
     </section>
+    <section id="log-formatObject">
+        <h3 id="formatObject">Log.formatObject</h3>
+        <p>
+          <code>Log.formatObject</code> Formats an object into a string representation, making it easy to read and debug. This function takes an object as input and returns a string that represents the object&#39;s properties and values.
+        </p>
+        <h4 id="tasks">Tasks</h4>
+        <ul>
+          <li>Takes an object as input and returns a string representation of its properties and values</li>
+          <li>Optional indent parameter adds spaces for nested objects</li>
+          <li>Supports nested objects and arrays</li>
+          <li>Ignores non-enumerable properties</li>
+        </ul>
+        <h4 id="usage">Usage</h4>
+        <pre>
+										<code class="language-js">const demo = Log.formatObject({name: &quot;John&quot;, age: 30});
+console.log(demo);
+</code>
+									</pre>
+        <pre>
+										<code>Console Output:
+&gt;&gt;&gt; Object:
+     {
+        name: &quot;John&quot;
+        age: 30
+     }
+</code>
+									</pre>
+      </section>
+      <section id="log-formatVar">
+        <h3 id="formatvar">Log.formatVar</h3>
+        <p>Formats a variable into a string representation, allowing for easy logging and debugging. This function takes a variable as input and returns a string that represents the variable&#39;s value.</p>
+        <h4 id="tasks-1">Tasks</h4>
+        <ul>
+          <li>Takes a variable as input and returns a string representation of its value</li>
+          <li>Supports multiple variable types (string, number, boolean, object, array)</li>
+          <li>Uses type-specific formatting (quotes for strings, brackets for objects)</li>
+        </ul>
+        <h4 id="usage-1">Usage</h4>
+        <pre>
+										<code class="language-js">const demo = Log.formatVar(&quot;hello&quot;);
+console.log(demo);</code>
+									</pre>
+        <pre>
+										<code>Console Output:
+  &gt;&gt;&gt; &quot;hello&quot;
+  </code>
+									</pre>
+      </section>
+      <section id="log-print">
+        <h3 id="print">Log.print</h3>
+        <p>Logs one or more variables to the console, making it easy to debug and test code. This function takes one or more variables as input and logs them to the console.</p>
+        <h4 id="tasks-2">Tasks</h4>
+        <ul>
+          <li>Logs one or more variables to the console</li>
+          <li>Supports multiple variable types (string, number, boolean, object, array)</li>
+          <li>Uses type-specific formatting (quotes for strings, padding for numbers)</li>
+        </ul>
+        <h4 id="usage-2">Usage</h4>
+        <pre>
+										<code class="language-js">Log.print(&quot;hello&quot;, {name: &quot;John&quot;});
+/// No need of console.log
+</code>
+									</pre>
+        <pre>
+										<code>Console Output:
+&gt;&gt;&gt; &quot;hello&quot;
+&gt;&gt;&gt; Object:
+     {
+        name: &quot;John&quot;
+        age: 30
+     }
+</code>
+									</pre>
+        <blockquote>
+          <p>
+            <strong>Note!:</strong>
+            <em>
+              <code>Log.print</code> does not requires <code>console.log</code> instead it is a replacement for <code>console.log</code>
+            </em>
+          </p>
+        </blockquote>
+      </section>
+      <section id="log-getCurrentTime">
+        <h3 id="getCurrentTime">Log.getCurrentTime</h3>
+        <p>Returns the current time or date with time, allowing for easy logging and debugging. This function takes an optional type parameter to specify the format.</p>
+        <h4 id="tasks-3">Tasks</h4>
+        <ul>
+          <li>Returns the current time or date with time</li>
+          <li>Optional type parameter specifies format (default: &#39;time&#39;, alternative: &#39;date&#39;)</li>
+          <li>Supports two formats (time, date &amp; time)</li>
+        </ul>
+        <h4 id="usage-3">Usage</h4>
+        <pre>
+										<code class="language-js">const time = Log.getCurrentTime();
+const dateAndTime = Log.getCurrentTime(&#39;date&#39;);
+console.log(time,&#39;\n&#39;,dateAndTime);
+</code>
+									</pre>
+        <pre>
+										<code>Console Output:
+&gt;&gt;&gt; 00:00:00
+    12:12:2024 on 00:00:00
+</code>
+									</pre>
+        <blockquote>
+          <p>
+            <strong>Note!:</strong>
+            <em>Time and date may vary</em>
+          </p>
+        </blockquote>
+      </section>
+      <section id="log-logInDiv">
+        <h3 id="logInDiv">Log.logInDiv</h3>
+        <p>Displays console output in a div element, making it easy to debug and test code. This function displays all logged messages in a div element on the page.</p>
+        <h4 id="tasks-4">Tasks</h4>
+        <ul>
+          <li>Displays console output in a div element</li>
+          <li>Supports multiple console methods (debug, info, warn, error)</li>
+          <li>Uses a customizable CSS style for the log div</li>
+        </ul>
+        <h4 id="usage-4">Usage</h4>
+        <pre>
+										<code class="language-js">Log.logInDiv();
+/// Now all console messages will be shown in a div on the page
+</code>
+									</pre>
+      </section>
     <section>
-      <h2 id="usage">Usage</h2>
+      <h2 id="log-how-to-use-logjs">How To Use Log.js</h2>
       <a href="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js">
         <img src="https://img.shields.io/badge/jsdelivr-Log.js-e74d3a?logo=jsdelivr" />
       </a>
@@ -87,7 +248,7 @@
       </ul>
     </section>
     <section>
-      <h2 id="version-info">Version Info</h2>
+      <h2 id="log-version-info">Version Info</h2>
       <p>
         <strong>current version:</strong> v1.0.0 <br>
         <strong>other versions :</strong>
@@ -98,8 +259,33 @@
       </ul>
       <p>Whether you’re working on a small project or a large-scale application, Log.js is your reliable companion for maintaining clean, efficient, and effective logging</p>
     </section>
+    
     <footer>
       <b>&copy; Mohammad Aqib</b>
     </footer>
+    
+    <button onclick="topFunction()" id="topBtn" title="Go to top" style="display: none;position: fixed;bottom: 80px;right: 30px;z-index: 1000;font-size: 18px;border: none;outline: none;background-color: var(--primary-color);color: white;cursor: pointer;padding: 15px;border-radius: 4px;">T&#9650;p</button>
+    <script>
+      // Get the button
+      let topbutton = document.getElementById("topBtn");
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {
+        scrollFunction()
+      };
+    
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          topbutton.style.display = "block";
+        } else {
+          topbutton.style.display = "none";
+        }
+      }
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
+                                                                                        
