@@ -6,7 +6,7 @@
     --secondary-color: #2ecc71;
     --background-color: #f0f0f0;
     --text-color: #333;
-    --heading-color: #4a4a4a;
+    --heading-color: #34495e;
     --link-color: #3498db;
     --link-hover-color: #2980b9;
     --border-color: #ccc;
@@ -22,12 +22,14 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     font-family: var(--font-family);
     line-height: 1.6;
     background-color: var(--background-color);
     color: var(--text-color);
-    padding: 20px;
+    padding: 10px;
+    scroll-behavior: smooth;
 }
 
 /* Headings */
@@ -43,27 +45,22 @@ h1 {
 
 h2 {
     font-size: 2rem;
-    color: #34495e;
 }
 
 h3 {
     font-size: 1.75rem;
-    color: #16a085;
 }
 
 h4 {
     font-size: 1.5rem;
-    color: #27ae60;
 }
 
 h5 {
     font-size: 1.25rem;
-    color: #2980b9;
 }
 
 h6 {
     font-size: 1rem;
-    color: #8e44ad;
 }
 
 /* Paragraphs */
@@ -385,5 +382,6 @@ th {
 td {
     background-color: #f9f9f9;
 }
+
 
     
