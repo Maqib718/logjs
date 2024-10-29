@@ -34,6 +34,9 @@
           <a href="#log-introduction">Introduction</a>
         </li>
         <li>
+          <a href="#log-key-features">Key Features</a>
+        </li>
+        <li>
           <a href="#log-formatObject">Functions:</a>
           <ul>
             <li>
@@ -61,7 +64,7 @@
         </li>
       </ul>
     </section>
-    <section>
+    <section id="log-key-features">
       <h2 id="key-features">Key Features</h2>
       <ul>
         <li>
@@ -109,20 +112,15 @@
           <li>Ignores non-enumerable properties</li>
         </ul>
         <h4 id="usage">Usage</h4>
-        <pre>
-										<code class="language-js">const demo = Log.formatObject({name: &quot;John&quot;, age: 30});
-console.log(demo);
-</code>
-									</pre>
-        <pre>
-										<code>Console Output:
+        <pre><code class="language-js">const demo = Log.formatObject({name: &quot;John&quot;, age: 30});
+console.log(demo);</code></pre>
+        <pre><code>Console Output:
 &gt;&gt;&gt; Object:
      {
         name: &quot;John&quot;
         age: 30
      }
-</code>
-									</pre>
+</code></pre>
       </section>
       <section id="log-formatVar">
         <h3 id="formatvar">Log.formatVar</h3>
@@ -134,15 +132,10 @@ console.log(demo);
           <li>Uses type-specific formatting (quotes for strings, brackets for objects)</li>
         </ul>
         <h4 id="usage-1">Usage</h4>
-        <pre>
-										<code class="language-js">const demo = Log.formatVar(&quot;hello&quot;);
-console.log(demo);</code>
-									</pre>
-        <pre>
-										<code>Console Output:
-  &gt;&gt;&gt; &quot;hello&quot;
-  </code>
-									</pre>
+        <pre><code class="language-js">const demo = Log.formatVar(&quot;hello&quot;);
+console.log(demo);</code></pre>
+        <pre><code>Console Output:
+  &gt;&gt;&gt; &quot;hello&quot;</code></pre>
       </section>
       <section id="log-print">
         <h3 id="print">Log.print</h3>
@@ -154,21 +147,16 @@ console.log(demo);</code>
           <li>Uses type-specific formatting (quotes for strings, padding for numbers)</li>
         </ul>
         <h4 id="usage-2">Usage</h4>
-        <pre>
-										<code class="language-js">Log.print(&quot;hello&quot;, {name: &quot;John&quot;});
-/// No need of console.log
-</code>
-									</pre>
-        <pre>
-										<code>Console Output:
+        <pre><code class="language-js">Log.print(&quot;hello&quot;, {name: &quot;John&quot;});
+/// No need of console.log</code></pre>
+        <pre><code>Console Output:
 &gt;&gt;&gt; &quot;hello&quot;
 &gt;&gt;&gt; Object:
      {
         name: &quot;John&quot;
         age: 30
      }
-</code>
-									</pre>
+</code></pre>
         <blockquote>
           <p>
             <strong>Note!:</strong>
@@ -188,18 +176,12 @@ console.log(demo);</code>
           <li>Supports two formats (time, date &amp; time)</li>
         </ul>
         <h4 id="usage-3">Usage</h4>
-        <pre>
-										<code class="language-js">const time = Log.getCurrentTime();
+        <pre><code class="language-js">const time = Log.getCurrentTime();
 const dateAndTime = Log.getCurrentTime(&#39;date&#39;);
-console.log(time,&#39;\n&#39;,dateAndTime);
-</code>
-									</pre>
-        <pre>
-										<code>Console Output:
+console.log(time,&#39;\n&#39;,dateAndTime);</code></pre>
+        <pre><code>Console Output:
 &gt;&gt;&gt; 00:00:00
-    12:12:2024 on 00:00:00
-</code>
-									</pre>
+    12:12:2024 on 00:00:00</code></pre>
         <blockquote>
           <p>
             <strong>Note!:</strong>
@@ -217,14 +199,11 @@ console.log(time,&#39;\n&#39;,dateAndTime);
           <li>Uses a customizable CSS style for the log div</li>
         </ul>
         <h4 id="usage-4">Usage</h4>
-        <pre>
-										<code class="language-js">Log.logInDiv();
-/// Now all console messages will be shown in a div on the page
-</code>
-									</pre>
+        <pre><code class="language-js">Log.logInDiv();
+/// Now all console messages will be shown in a div on the page</code></pre>
       </section>
-    <section>
-      <h2 id="log-how-to-use-logjs">How To Use Log.js</h2>
+    <section id="log-how-to-use-logjs">
+      <h2 id="how-to-use-logjs">How To Use Log.js</h2>
       <a href="https://cdn.jsdelivr.net/gh/Mohammad-Aqib786/libs@1.0.0/Log.js">
         <img src="https://img.shields.io/badge/jsdelivr-Log.js-e74d3a?logo=jsdelivr" />
       </a>
@@ -243,12 +222,12 @@ console.log(time,&#39;\n&#39;,dateAndTime);
           <p>Display logs in a dedicated div for enhanced readability and debugging.</p>
         </li>
         <li>
-          <a href="https://github.com/Mohammad-Aqib786/libs/blob/labs/v1.0.0/README.md">Tutorial On GitHub</a>
+          <a href="https://github.com/Mohammad-Aqib786/libs/blob/labs/v1.0.0/README.md">Tutorial also available on GitHub</a>
         </li>
       </ul>
     </section>
-    <section>
-      <h2 id="log-version-info">Version Info</h2>
+    <section id="log-version-info">
+      <h2 id="version-info">Version Info</h2>
       <p>
         <strong>current version:</strong> v1.0.0 <br>
         <strong>other versions :</strong>
@@ -288,4 +267,4 @@ console.log(time,&#39;\n&#39;,dateAndTime);
     </script>
   </body>
 </html>
-                                                                                        
+ 
