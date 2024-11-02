@@ -118,6 +118,7 @@ input, textarea, select {
     width: 100%;
     padding: 10px;
     margin-bottom: 1rem;
+    font-size:1rem;
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius);
 }
@@ -149,7 +150,6 @@ button:hover, .btn:hover {
 /* Images & Iframes */
 img, iframe {
     max-width: 100%;
-    height: auto;
 }
 
 /* Code and Preformatted Text */
